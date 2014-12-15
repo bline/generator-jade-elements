@@ -1,4 +1,4 @@
-generator-jade-element
+generator-jade-elements
 ======================
 
-Generator to create Web Component elements with Jade and Stylus
+Generator to create Web Component elements with Jade, Stylus and Coffee
