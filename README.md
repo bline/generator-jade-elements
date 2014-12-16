@@ -37,59 +37,25 @@ Finally, initiate the generator:
 yo jade-elements
 ```
 
-jade-element supports two structures:
+jade-element produces a structure like:
 
 ```
 └── src
     ├── firetree-element.coffee
     ├── firetree-element.jade
     ├── firetree-element.styl
-    ├── firetree-element.yaml
     ├── group
     │   ├── index.jade
     │   ├── n1-element.coffee
     │   ├── n1-element.jade
     │   ├── n1-element.styl
-    │   ├── n1-element.yaml
     │   ├── n2-element.coffee
     │   ├── n2-element.jade
     │   ├── n2-element.styl
-    │   └── n2-element.yaml
     ├── test
     ├── x-tree-element.coffee
     ├── x-tree-element.jade
     ├── x-tree-element.styl
-    └── x-tree-element.yaml
-```
-
-and
-
-```
-└── src
-    ├── firetree-element
-    │   ├── index.coffee
-    │   ├── index.jade
-    │   ├── index.styl
-    │   └── index.yaml
-    ├── foo-element
-    │   ├── index.coffee
-    │   ├── index.jade
-    │   ├── index.styl
-    │   └── index.yaml
-    ├── group
-    │   ├── index.jade
-    │   ├── n1-element
-    │   │   ├── index.coffee
-    │   │   ├── index.jade
-    │   │   ├── index.styl
-    │   │   └── index.yaml
-    │   └── n2-element
-    │       ├── index.coffee
-    │       ├── index.jade
-    │       ├── index.styl
-    │       └── index.yaml
-    └── test
-
 ```
 
 For each element, all files are optional except the jade file.
