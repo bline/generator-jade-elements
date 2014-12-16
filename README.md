@@ -1,5 +1,7 @@
 # generator-jade-elements [![Build Status](https://secure.travis-ci.org/bline/generator-jade-elements.png?branch=master)](https://travis-ci.org/bline/generator-jade-elements)
 
+Generator to create Web Component elements with Jade, Stylus and Coffee
+
 > [Yeoman](http://yeoman.io) generator
 
 
@@ -102,3 +104,4 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 ## License
 
 MIT
+
