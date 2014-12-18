@@ -1,3 +1,7 @@
+# WORK IN PROGRESS
+
+This header will be removed when something here is useful.
+
 # generator-jade-elements [![Build Status](https://secure.travis-ci.org/bline/generator-jade-elements.png?branch=master)](https://travis-ci.org/bline/generator-jade-elements)
 
 Generator to create Web Component elements with Jade, Stylus and Coffee
