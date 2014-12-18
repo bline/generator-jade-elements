@@ -1,0 +1,20 @@
+(function () {
+  'use strict';
+  module.exports = {
+    suites: ['public/test'],
+    varbose: true,
+    /*browsers: [
+      {
+        browserName: 'Chrome',
+        platform: 'Windows 7',
+        version: 'dev',
+        'screen-resolution': '800x600'
+      }
+    ],*/
+    sauce: {
+      username: process.env.SAUCE_USERNAME,
+      accessKey: process.env.SAUCE_ACCESS_KEY
+    }
+  };
+})();
+

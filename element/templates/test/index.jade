@@ -1,0 +1,23 @@
+doctype html
+//
+  @license
+  Derived from https://github.com/PolymerLabs/seed-element
+  http://polymer.github.io/LICENSE.txt
+  Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+
+// @license
+  Jade/coffeescript version Copyright (c) 2014 Scott Beck. All rights reserved.
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes')
+    title Tests
+    script(src='../../webcomponentsjs/webcomponents.min.js')
+    script(src='../../web-component-tester/browser.js')
+  body
+    script
+      :coffee
+        # Load and run all tests (.html, .js) as one suite:
+        WCT.loadSuites [<% suites.forEach(function (suiteName, i) { %>
+          '<%= suiteName %>'<% }) %>
+        ]

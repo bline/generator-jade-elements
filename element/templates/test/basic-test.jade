@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes')
+    title seed-jade-element
+    script(src='<%= root %>/webcomponentsjs/webcomponents.min.js')
+    script(src='<%= root %>/web-component-tester/browser.js')
+    // Step 1: import the element to test
+    link(rel='import', href='<%= elementRoot %>/seed-jade-element.html')
+  body
+    // You use the document as a place to set up your fixtures.
+    <%= name %>(id="fixture")
+    script
+      :coffee
+        myEl = document.querySelector "<%= name %>"
+        suite "<<%= name %>>", ->
+          test 'defines the "author" property', ->
+            assert.equal myEl.author, "<%= realname %>"
+            return

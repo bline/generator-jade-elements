@@ -1,0 +1,29 @@
+<% bowerImports.forEach(function (name) { %>link(rel='import', href='<%= componentRoot %>/bower_components/<%= name %>/<%= name %>.html')
+<% }); %>
+<% localImports.forEach(function (name) { %>link(rel='import', href='<%= componentRoot %>/<%= name %>.html')
+<% }); %>
+//
+  Element description
+  @example
+    <<%= name %>></<%= name %>>
+  @status alpha 
+polymer-element(name='<%= name %>', attributes='notitle author')
+  template<% if (inlineStylus) { %>
+    style
+      :stylus
+        :host
+          display: block<% } else { %>
+    // build:css <%= name %>.min.css
+    link(rel='stylesheet', href='<%= name %>.css')
+    // endBuild<% } %>
+    content<% if (inlineCoffee) { %>
+  script
+    :coffee
+      Polymer '<%= name %>'
+        author: '<%= realname %>'
+        ready: ->
+          # This is where the lifecycle begins
+          # do something interesting<% } else { %>
+  // build:js <%= name %>.min.js
+  script(src='<%= name %>.js')
+  // endBuild<% } %>

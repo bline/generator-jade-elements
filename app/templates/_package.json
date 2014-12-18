@@ -1,0 +1,53 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.0",
+  "description": "Polymer element to solve some problem.",
+  "license": "MIT",
+  "repository": "<%= githubUser %>/<%= _.slugify(appname) %>",
+  "author": {
+    "name": "<%= realname %>",
+    "email": "<%= email %>",
+    "url": "<%= githubUrl %>"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "gulp test:local"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "del": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-audit": "^1.0.0",
+    "gulp-buffer": "0.0.2",
+    "gulp-bump": "^0.1.11",
+    "gulp-cached": "^1.0.1",
+    "gulp-changed": "^1.1.0",
+    "gulp-coffee": "^2.2.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-data": "^1.0.2",
+    "gulp-filter": "^1.0.2",
+    "gulp-if": "^1.2.5",
+    "gulp-jade": "^0.10.0",
+    "gulp-jade-inheritance": "^0.5.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-minify-html": "^0.1.7",
+    "gulp-rename": "^1.2.0",
+    "gulp-rev": "^2.0.1",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-stylus": "^1.3.4",
+    "gulp-tag-version": "^1.2.1",
+    "gulp-uglify": "^1.0.2",
+    "gulp-usemin": "^0.3.8",
+    "gulp-util": "^3.0.1",
+    "gulp-vulcanize": "^5.0.0",
+    "jade": "^1.8.1",
+    "js-yaml": "^3.2.3",
+    "lodash": "^2.4.1",
+    "nib": "^1.0.4",
+    "stylus": "^0.49.3",
+    "web-component-tester": "^2.0.3"
+  }
+}
